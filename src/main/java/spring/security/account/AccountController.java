@@ -15,5 +15,8 @@ public class AccountController {
     public Account createAccount(@ModelAttribute Account account) {
         return accountService.createAccount(account);
     }
-
+    @GetMapping("/hello7")
+    public String hello7() {
+        return "Hello7";
+    }
 }
